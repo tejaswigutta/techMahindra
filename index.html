@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        overflow-x: hidden;
+        padding: 2rem;
+        margin: 0;
+      }
+
+      #next-steps {
+        display: none;
+      }
+
+      #next-button {
+        text-align: center;
+      }
+
+      #next-button button {
+        height: 3rem;
+        width: 6rem;
+      }
+
+      #points {
+        padding-left: 1.2rem;
+        /* margin:0; */
+      }
+
+      #points li {
+        margin-bottom: 1rem;
+      }
+
+      #container h1 {
+        font-size: 1.5rem;
+        color: grey;
+      }
+
+      @media (max-width: 570px) {
+        #container h1 {
+          font-size: 1rem;
+          color: grey;
+        }
+      }
+
+      @media (min-width: 571px) and (max-width: 1100px) {
+        #container h1 {
+          font-size: 1rem;
+          color: grey;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>
+        THERE WILL BE A QUIZ ON THE FOLLOWING QUESTIONS,PLEASE READ THE 10
+        POINTS CAREFULLY BEFORE PROCEEDING
+      </h1>
+      <ul type="circle" id="points">
+        <li>
+          Fill the form if you are eligible.To Check Eligibility click here.
+        </li>
+        <li>
+          Eligible students get a link from TechM for the 1st Round of
+          Assessment which Aptitude round,followed by 2nd Round of Assessment
+          which is Psychometric test
+        </li>
+        <li>
+          If the students clear both the rounds,they will become eligible to get
+          Letter of Intent/Conditional Offer Letter from TechM. LOI basically
+          assures student of a job if he/she successfully completes the training
+          with CareerLabs
+        </li>
+        <li>
+          Selected students will be contacted by enrollment team of
+          careerlabs,who would help students with the enrollment process
+        </li>
+        <li>
+          Students pay a fee of Rs. 60000- CareerLabs will help with EMI options
+          where the student can pay Rs. 6000 every month over 10 months
+        </li>
+        <li>
+          You will need to submit a scanned copy of all your documents(10th,12th
+          and BE Markscards,PAN and Aadhar Card + TechM Application form +
+          Declaration Form to be sent to TechM)
+        </li>
+        <li>
+          Tech Mahindra Shares the Letter of Intent and Intense tranining is
+          conducted for 2 months,please refer to the complete curriculum here
+        </li>
+        <li>
+          Once the training is completed, Students undergo technical assessment
+          and interview with TechM
+        </li>
+        <li>
+          Selected Students join techM as an Associate Software Engineer with a
+          Salary of 3.6 LPA
+        </li>
+        <li>
+          Once the Student completes 3 months probation with TechM, Salary is
+          revised to 4LPA and Training Fee Reimbursement of Rs. 4000 is provided
+          to the student.
+        </li>
+      </ul>
+    </div>
+    <div id="next-steps">
+      <h1>The next steps are as follows</h1>
+    </div>
+    <div id="next-button">
+      <button onClick="next()">NEXT</button>
+    </div>
+  </body>
+  <script>
+    function next() {
+      console.log("hi");
+      let container = document.getElementById("container");
+      let nextSteps = document.getElementById("next-steps");
+      console.log(nextSteps);
+      container.style.display = "none";
+      nextSteps.style.display = "block";
+    }
+  </script>
+</html>
